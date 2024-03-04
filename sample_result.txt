@@ -1,0 +1,80 @@
+
+######### Menu ##############
+#a - Create a category.
+#b - Create a document
+#c - Update a document
+#d - Delete a document.
+#e - Output the inverted index.
+#q - Quit
+
+Enter a menu choice: e
+{}
+
+Enter a menu choice: a
+Enter the ID of the category: 1
+Enter the name of the category: Sports
+
+Enter a menu choice: a
+Enter the ID of the category: 2
+Enter the name of the category: Seasons
+
+Enter a menu choice: b
+Enter the ID of the document: 1
+Enter the text of the document: Baseball is played during summer months.
+Enter the title of the document: Exercice
+Enter the date of the document: 2023-10-03
+Enter the category of the document: Sports
+
+Enter a menu choice: e
+{'baseball': 'Exercice:1', 'during': 'Exercice:1', 'is': 'Exercice:1', 'months': 'Exercice:1', 'played': 'Exercice:1', 'summer': 'Exercice:1'}      
+
+Enter a menu choice: b
+Enter the ID of the document: 2
+Enter the text of the document: Summer is the time for picnics here. Picni
+cs time!
+Enter the title of the document: California
+Enter the date of the document: 2023-10-03
+Enter the category of the document: Sports
+
+Enter a menu choice: e
+{'baseball': 'Exercice:1', 'during': 'Exercice:1', 'for': 'California:1', 'here': 'California:1', 'is': 'California:1, Exercice:1', 'months': 'Exercice:1', 'picnics': 'California:2', 'played': 'Exercice:1', 'summer': 'California:1, Exercice:1', 'the': 'California:1', 'time': 'California:2'}     
+
+Enter a menu choice: b
+Enter the ID of the document: 3
+Enter the text of the document: Months, months, months later we found out 
+why.
+Enter the title of the document: Discovery
+Enter the date of the document: 2023-10-03
+Enter the category of the document: Seasons
+
+Enter a menu choice: e
+{'baseball': 'Exercice:1', 'during': 'Exercice:1', 'for': 'California:1', 'found': 'Discovery:1', 'here': 'California:1', 'is': 'California:1, Exercice:1', 'later': 'Discovery:1', 'months': 'Discovery:3, Exercice:1', 'out': 'Discovery:1', 'picnics': 'California:2', 'played': 'Exercice:1', 'summer': 'California:1, Exercice:1', 'the': 'California:1', 'time': 'California:2', 'we': 'Discovery:1', 'why': 'Discovery:1'}
+
+Enter a menu choice: b
+Enter the ID of the document: 4
+Enter the text of the document: Why is summer so hot here? So hot!
+Enter the title of the document: Arizona
+Enter the date of the document: 2023-10-03
+Enter the category of the document: Seasons
+
+Enter a menu choice: e
+{'baseball': 'Exercice:1', 'during': 'Exercice:1', 'for': 'California:1', 'found': 'Discovery:1', 'here': 'Arizona:1, California:1', 'hot': 'Arizona:2', 'is': 'Arizona:1, California:1, Exercice:1', 'later': 'Discovery:1', 'months': 'Discovery:3, Exercice:1', 'out': 'Discovery:1', 'picnics': 'California:2', 'played': 'Exercice:1', 'so': 'Arizona:2', 'summer': 'Arizona:1, California:1, Exercice:1', 'the': 'California:1', 'time': 'California:2', 'we': 'Discovery:1', 'why': 'Arizona:1, Discovery:1'}
+
+Enter a menu choice: d
+Enter the document id to be deleted: 3
+
+Enter a menu choice: e
+{'baseball': 'Exercice:1', 'during': 'Exercice:1', 'for': 'California:1', 'here': 'Arizona:1, California:1', 'hot': 'Arizona:2', 'is': 'Arizona:1, California:1, Exercice:1', 'months': 'Exercice:1', 'picnics': 'California:2', 'played': 'Exercice:1', 'so': 'Arizona:2', 'summer': 'Arizona:1, California:1, Exercice:1', 'the': 'California:1', 'time': 'California:2', 'why': 'Arizona:1'}
+
+Enter a menu choice: c
+Enter the ID of the document: 4
+Enter the text of the document: Why is summer so hot here? This is a bad time!
+Enter the title of the document: Arizona
+Enter the date of the document: 2023-10-03
+Enter the category of the document: Seasons
+
+Enter a menu choice: e
+{'a': 'Arizona:1', 'bad': 'Arizona:1', 'baseball': 'Exercice:1', 'during': 'Exercice:1', 'for': 'California:1', 'here': 'Arizona:1, California:1', 'hot': 'Arizona:1', 'is': 'Arizona:2, California:1, Exercice:1', 'months': 'Exercice:1', 'picnics': 'California:2', 'played': 'Exercice:1', 'so': 'Arizona:1', 'summer': 'Arizona:1, California:1, Exercice:1', 'the': 'California:1', 'this': 'Arizona:1', 'time': 'Arizona:1, California:2', 'why': 'Arizona:1'}
+
+Enter a menu choice: q
+Leaving the application ...
