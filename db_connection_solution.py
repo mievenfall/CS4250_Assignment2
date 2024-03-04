@@ -20,7 +20,7 @@ def connectDataBase():
     # --> add your Python code here
     DB_NAME = "corpus"
     DB_USER = "postgres"
-    DB_PASSWORD = "Xxqfjc$7"
+    DB_PASSWORD = "YOUR_PASSWORD"
     DB_HOST = "localhost"
     DB_PORT = "5432"
 

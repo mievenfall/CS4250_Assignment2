@@ -12,7 +12,7 @@ from psycopg2 import *
 def createDatabase():
     DB_NAME = "corpus"
     DB_USER = "postgres"
-    DB_PASS = "Xxqfjc$7"
+    DB_PASS = "YOUR_PASSWORD"
     DB_HOST = "localhost"
     DB_PORT = "5432"
 
